@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Nov 21 07:31:30 2019
+
+@author: shaker
+"""
+
+#excercise one
+"""
+First = int(input("enter the first number"))
+Second= int(input("enter the second number"))
+
+if First<Second:
+    print(First)
+else:
+    print(Second)
+"""
+
+
+#excercise 2    
+"""
+number=int(input("enter a number"))
+for i in range(1,11):
+    multi= i*number
+    print(number,"X",i,"=",multi)
+"""
+#excercise 3
+"""
+for i in range(1,10):
+    for j in range(1,i+1):
+        print("*",end="")
+    print("")
+n=1
+for i in range(1,10):
+    for j in range(n,10):
+        print("*",end="")
+    n=n+1
+    print("")
+"""
+
+#excercise 4
+"""
+letters = ["x", "y","z","a","b","c"]
+for i in letters:
+    if i == "a":
+        continue
+    elif i == "c":
+        break
+    print(i)
+
+    #answe is x y z b
+"""
+#excercise 5
+"""
+for x in range(12,25,3):
+    print(x)
+#the answer is 12 15 18 21 24
+"""
+#excercise 6
+"""
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i=i+1
+#the answer is 1 2 3 then it will go out of the program
+"""
+"""
+#excercise 7 
+number=int(input("please enter a number"))
+sum=0
+for i in range(0,number+1):
+ sum=sum+i
+print("the summation of the number is: ,",sum)
+"""
+"""
+#excercise 8
+
+number=int(input("enter a number please "))
+if number%2 == 0:
+    print("number is even")
+else:
+    print("number is odd")
+"""
+"""
+#excercise 9
+pyramid_width= 10
+for i in range(0,pyramid_width):
+    for j in range(0,pyramid_width-i):
+        print(" ",end="")
+    for k in range(0,2*i+1):
+        print("*",end="")
+    print("")
+for i in range(1,pyramid_width):
+    for j in range(0,i+1):
+        print(" ",end="")
+    for k in range(1,2*pyramid_width-2*i):
+        print("*",end="")
+    print("")
+"""
+""" 
+#excercise 10
+while True:
+    try:
+        n = input("Please enter an integer: ")
+        n = int(n)
+        break
+    except ValueError:
+        print("No valid integer! Please try again ...")
+print("finally you have entered an integer number and its is: ",n)
+"""
+"""
+#excercise 11
+
+try:
+    a = 3
+    if a<4:
+        b=a/(a-3)
+        print("Value of b= ",b)
+except(ZeroDivisionError,NameError):
+        print("\nError Occured and Handled")
+        
+#output: Error Occured and Handled
+"""
